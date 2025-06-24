@@ -1,0 +1,1 @@
+// main.js içeriği buraya eksiksiz şekilde kopyalanmalı (600+ satır)

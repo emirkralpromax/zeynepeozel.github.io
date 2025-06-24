@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Senin Müzen - Çok Odalı ve Sohbetli</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startScreen">
+    <h1>Senin Müzen</h1>
+    <p>Burada sevdiğin renkler, anılar ve duygular gizli.<br/>Hazırsan başla ve keşfetmeye başla.</p>
+    <button id="startBtn">Başla</button>
+    <button id="creditsBtn">Credits</button>
+  </div>
+
+  <div id="creditsScreen">
+    <h2>Credits</h2>
+    <p>Bu kişisel müze, Emir tarafından <br/>kız arkadaşına özel sürpriz amaçlı yapıldı.<br/><br/>Teknolojiler: HTML5, Canvas, JS, CSS.<br/>Pixel art ve 8-bit müzik temalıdır.</p>
+    <button id="backToMenuBtn">Geri Dön</button>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="dialog"></div>
+
+  <div id="controls">
+    <button class="btn" onclick="move('left')">←</button>
+    <button class="btn" onclick="move('up')">↑</button>
+    <button class="btn" onclick="move('down')">↓</button>
+    <button class="btn" onclick="move('right')">→</button>
+    <button class="btn" onclick="interact()">❣️</button>
+  </div>
+
+  <button id="musicBtn" onclick="toggleMusic()">🎶</button>
+
+  <div id="chatBox">
+    <div id="chatText"></div>
+    <div id="chatButtons"></div>
+    <button onclick="endChat()" style="margin-top:10px; padding:5px 10px; border-radius:5px; cursor:pointer;">Sohbetten Çık</button>
+  </div>
+
+  <audio id="bgm" loop>
+    <source src="https://files.catbox.moe/7pjf47.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="main.js"></script>
+</body>
+</html>
